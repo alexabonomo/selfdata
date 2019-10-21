@@ -10,15 +10,12 @@
 
     <link rel="stylesheet" href="styles.css">
     <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet" />
-    <script> src="libraries/p5.js"</script>
-    <script> src="libraries/p5.dom.js"</script>
-    <script> src="libraries/p5.sound.js"</script>
 
 </head>
 
 <body>
 
-    <!-- <div class="daily-emotion">
+    <div class="daily-emotion">
         <form id="emotion">
         <label for="emote">Today I experienced:</label>
         <fieldset>
@@ -76,7 +73,7 @@
             <input type="checkbox" name="emote" value="calm" id="calm">
             <label>calm</label>
             <br>
-            <input type="checkbox" name="emote" value="chilled-out" id="chilled-out">
+            <input type="checkbox" name="emote" value="chilledOut" id="chilledOut">
             <label>chilled-out</label>
             <br>
             <input type="checkbox" name="emote" value="fear" id="fear">
@@ -91,13 +88,37 @@
             <input type="checkbox" name="emote" value="terror" id="terror">
             <label>terror</label>
             <br>
+            <input type="checkbox" name="emote" value="nervous" id="nervous">
+            <label>nervous</label>
+            <br>
+            <input type="checkbox" name="emote" value="worry" id="worry">
+            <label>worry</label>
+            <br>
+            <input type="checkbox" name="emote" value="dread" id="dread">
+            <label>dread</label>
+            <br>
+            <input type="checkbox" name="emote" value="tense" id="tense">
+            <label>tense</label>
+            <br>
+            <input type="checkbox" name="emote" value="anxiety" id="anxiety">
+            <label>anxiety</label>
+            <br>
+            <input type="checkbox" name="emote" value="alarm" id="alarm">
+            <label>alarm</label>
+            <br>
+            <input type="checkbox" name="emote" value="stressed" id="stressed">
+            <label>stressed</label>
+            <br>
+            <input type="checkbox" name="emote" value="horror" id="horror">
+            <label>horror</label>
+            <br>
             <input type="checkbox" name="emote" value="anger" id="anger">
             <label>anger</label>
             <br>
             <input type="checkbox" name="emote" value="mad" id="mad">
             <label>mad</label>
             <br>
-            <input type="checkbox" name="emote" value="pissed-off" id="pissed-off">
+            <input type="checkbox" name="emote" value="pissedOff" id="pissedOff">
             <label>pissed-off</label>
             <br>
             <input type="checkbox" name="emote" value="rage" id="rage">
@@ -124,7 +145,7 @@
             <input type="checkbox" name="emote" value="devastation" id="devastation">
             <label>devastation</label>
             <br>
-            <input type="checkbox" name="emote" value="grossed out" id="grossed out">
+            <input type="checkbox" name="emote" value="grossedOut" id="grossedOut">
             <label>grossed out</label>
             <br>
             <input type="checkbox" name="emote" value="revulsion" id="revulsion">
@@ -138,11 +159,15 @@
             <br>
             <input type="submit" name="submit" value="done" id="done">
         </form>
-    </div> -->
+    </div>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <!-- <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-database.js"></script>
     <script src="main.js"></script>
+    <script src="libraries/p5.js"></script>
+    <script src="libraries/p5.dom.js"></script>
+    <script src="libraries/p5.sound.js"></script>
     
 </body>
 
