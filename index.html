@@ -10,164 +10,2371 @@
 
     <link rel="stylesheet" href="styles.css">
     <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>google.charts.load('current', { 'packages': ['line'] });</script>
 
 </head>
 
 <body>
+    <header></header>
+    <p id="time"></p>
+    <section class = "container">
+        <section class = "daily-emotion">
+            <div class="daily-emotion-happy">
+                <form id="emotion">
+                <label for="emote">Today I experienced:</label>
+                <fieldset>
+                    <label class = "happy"><input class="hide-checkbox" type="checkbox" name="emote" value="true" id="liking">
+                    liking</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "happy"><input class="hide-checkbox" type="checkbox" name="emote" value="true" id="pleasure">
+                    pleasure</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "happy"><input class="hide-checkbox" type="checkbox" name="emote" value="enjoyment" id="enjoyment" >
+                    enjoyment</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "happy"><input class="hide-checkbox" type="checkbox" name="emote" value="happy" id="happy">
+                    happy</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "happy"><input class="hide-checkbox" type="checkbox" name="emote" value="enthusiasm" id="enthusiasm">
+                    enthusiasm</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "happy"><input class="hide-checkbox" type="checkbox" name="emote" value="satisfaction" id="satisfaction">
+                    satisfaction</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "happy"><input class="hide-checkbox" type="checkbox" name="emote" value="contentment" id="contentment">
+                    contentment</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "happy"><input class="hide-checkbox" type="checkbox" name="emote" value="thankful" id="thankful">
+                    thankful</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "happy"><input class="hide-checkbox" type="checkbox" name="emote" value="excitement" id="excitement">
+                    excitement</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "happy"><input class="hide-checkbox" type="checkbox" name="emote" value="adoration" id="adoration">
+                    adoration</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "happy"><input class="hide-checkbox" type="checkbox" name="emote" value="affection"  id="affection">
+                    affection</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "happy"><input class="hide-checkbox" type="checkbox" name="emote" value="pride" id="pride">
+                    pride</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "happy"><input class="hide-checkbox" type="checkbox" name="emote" value="optimism" id="optimism">
+                    optimism</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    </fieldset></div>
+            <div class="daily-emotion-relaxation">
+                <fieldset>
+                    <label class = "relaxation"><input class="hide-checkbox" type="checkbox" name="emote" value="true" id="easyGoing">
+                    easy-going</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "relaxation"><input class="hide-checkbox" type="checkbox" name="emote" value="true" id="love">
+                    love</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "relaxation"><input class="hide-checkbox" type="checkbox" name="emote" value="true" id="attraction">
+                    attraction</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "relaxation"><input class="hide-checkbox" type="checkbox" name="emote" value="savoring" id="savoring">
+                    savoring</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "relaxation"><input class="hide-checkbox" type="checkbox" name="emote" value="relaxation" id="relaxation">
+                    relaxation</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "relaxation"><input class="hide-checkbox" type="checkbox" name="emote" value="hoping" id="hoping">
+                    hoping</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "relaxation"><input class="hide-checkbox" type="checkbox" name="emote" value="caring" id="caring">
+                    caring</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value=7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "relaxation"><input class="hide-checkbox" type="checkbox" name="emote" value="eager" id="eager">
+                    eager</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "relaxation"><input class="hide-checkbox" type="checkbox" name="emote" value="calm" id="calm">
+                    calm</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "relaxation"><input class="hide-checkbox" type="checkbox" name="emote" value="chilledOut" id="chilledOut">
+                    chilled-out</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                </fieldset></div>
+            <div class="daily-emotion-fear">
+                <fieldset>
+                    <label class = "fear"><input class="hide-checkbox" type="checkbox" name="emote" value="fear" id="fear">
+                    fear</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "fear"><input class="hide-checkbox" type="checkbox" name="emote" value="scared" id="scared">
+                    scared</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "fear"><input class="hide-checkbox" type="checkbox" name="emote" value="panic" id="panic">
+                    panic</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "fear"><input class="hide-checkbox" type="checkbox" name="emote" value="terror" id="terror">
+                    terror</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label  class = "fear"><input class="hide-checkbox" type="checkbox" name="emote" value="nervous" id="nervous">
+                    nervous</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "fear"><input class="hide-checkbox" type="checkbox" name="emote" value="worry" id="worry">
+                    worry</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "fear"><input class="hide-checkbox" type="checkbox" name="emote" value="dread" id="dread">
+                    dread</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "fear"><input class="hide-checkbox" type="checkbox" name="emote" value="tense" id="tense">
+                    tense</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                </fieldset></div>
+            <div class="daily-emotion-anxiety">
+                <fieldset>
+                    <label class = "anxiety"><input class="hide-checkbox" type="checkbox" name="emote" value="anxiety" id="anxiety">
+                    anxiety</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "anxiety"><input class="hide-checkbox" type="checkbox" name="emote" value="alarm" id="alarm">
+                    alarm</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label  class = "anxiety"><input class="hide-checkbox" type="checkbox" name="emote" value="stressed" id="stressed">
+                    stressed</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "anxiety"><input class="hide-checkbox" type="checkbox" name="emote" value="horror" id="horror">
+                    horror</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                </fieldset></div>
+            <div class="daily-emotion-anger">
+                <fieldset>
+                    <label class = "anger"><input class="hide-checkbox" type="checkbox" name="emote" value="anger" id="anger">
+                    anger</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "anger"><input class="hide-checkbox" type="checkbox" name="emote" value="mad" id="mad">
+                    mad</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "anger"><input class="hide-checkbox" type="checkbox" name="emote" value="pissedOff" id="pissedOff">
+                    pissed-off</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "anger""><input class="hide-checkbox" type="checkbox" name="emote" value="rage" id="rage">
+                    rage</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "anger"><input class="hide-checkbox" type="checkbox" name="emote" value="hate" id="hate">
+                    hate</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "anger"><input class="hide-checkbox" type="checkbox" name="emote" value="frustration" id="frustration">
+                    frustration</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label  class = "anger"><input class="hide-checkbox" type="checkbox" name="emote" value="shock" id="shock">
+                    shock</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                </fieldset></div>
+            <div class="daily-emotion-sad">
+                <fieldset>
+                    <label class = "sad"><input class="hide-checkbox" type="checkbox" name="emote" value="lonely" id="lonely">
+                    lonely</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "sad"><input class="hide-checkbox" type="checkbox" name="emote" value="sad" id="sad">
+                    sad</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "sad"><input class="hide-checkbox" type="checkbox" name="emote" value="true" id="grief">
+                    grief</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "sad"><input class="hide-checkbox" type="checkbox" name="emote" value="true" id="empty">
+                    empty</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "sad"><input class="hide-checkbox" type="checkbox" name="emote" value="depression" id="depression">
+                    depression</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "sad"><input class="hide-checkbox" type="checkbox" name="emote" value="devastation" id="devastation">
+                    devastation</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                </fieldset></div>
+            <div class="daily-emotion-desire">
+                <fieldset>
+                    <label class = "desire"><input class="hide-checkbox" type="checkbox" name="emote" value="true" id="longing">
+                    longing</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "desire"><input class="hide-checkbox" type="checkbox" name="emote" value="true" id="wanting">
+                    wanting</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "desire"><input class="hide-checkbox" type="checkbox" name="emote" value="true" id="craving">
+                    craving</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "desire"><input class="hide-checkbox" type="checkbox" name="emote" value="true" id="desire">
+                    desire</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "desire"><input class="hide-checkbox" type="checkbox" name="emote" value="true" id="need">
+                    need</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "desire"><input class="hide-checkbox" type="checkbox" name="emote" value="true" id="anticipation">
+                    anticipation</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                </fieldset></div>
+            <div class="daily-emotion-disgust">
+                <fieldset>
+                    <label class = "disgust"><input class="hide-checkbox" type="checkbox" name="emote" value="grossedOut" id="grossedOut">
+                    grossed out</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "disgust"><input class="hide-checkbox" type="checkbox" name="emote" value="revulsion" id="revulsion">
+                    revulsion</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "disgust"><input class="hide-checkbox" type="checkbox" name="emote" value="nausea" id="nausea">
+                    nausea</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "disgust"><input class="hide-checkbox" type="checkbox" name="emote" value="disgust" id="disgust">
+                    disgust</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <label class = "disgust"><input class="hide-checkbox" type="checkbox" name="emote" value="true" id="sickened">
+                    sickened</label>
+                    <div class="scale">
+                        <input type="radio" id="7" name="my-rating" value="7">
+                        <label for="7">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="6" name="my-rating" value="6">
+                        <label for="6">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="5" name="my-rating" value="5">
+                        <label for="5">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="4" name="my-rating" value="4">
+                        <label for="4">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="3" name="my-rating" value="3">
+                        <label for="3">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="2" name="my-rating" value="2">
+                        <label for="2">
+                            <span class="description"></span>
+                        </label>
+                    
+                        <input type="radio" id="1" name="my-rating" value="1" checked>
+                        <label for="1">
+                            <span class="description"></span>
+                        </label>
+                    </div>
+                <br>
+                </fieldset>
+                <input type="submit" name="submit" value="done" id="done">
+                </div>
+                </form>
+            </div>
+        </section>
+        <section class = symbols>
+            <div id = "data-viz"></div>
+        </section>
+    </section>
 
-    <div class="daily-emotion">
-        <form id="emotion">
-        <label for="emote">Today I experienced:</label>
-        <fieldset>
-            <input type="checkbox" name="emote" value="true" id="liking">
-            <label>liking</label>
-            <br>
-            <input type="checkbox" name="emote" value="enjoyment" id="enjoyment" >
-            <label>enjoyment</label>
-            <br>
-            <input type="checkbox" name="emote" value="happy" id="happy">
-            <label>happy</label>
-            <br>
-            <input type="checkbox" name="emote" value="enthusiasm" id="enthusiasm">
-            <label>enthusiasm</label>
-            <br>
-            <input type="checkbox" name="emote" value="satisfaction" id="satisfaction">
-            <label>satisfaction</label>
-            <br>
-            <input type="checkbox" name="emote" value="contentment" id="contentment">
-            <label>contentment</label>
-            <br>
-            <input type="checkbox" name="emote" value="thankful" id="thankful">
-            <label>thankful</label>
-            <br>
-            <input type="checkbox" name="emote" value="excitement" id="excitement">
-            <label>excitement</label>
-            <br>
-            <input type="checkbox" name="emote" value="adoration" id="adoration">
-            <label>adoration</label>
-            <br>
-            <input type="checkbox" name="emote" value="affection"  id="affection">
-            <label>affection</label>
-            <br>
-            <input type="checkbox" name="emote" value="pride" id="pride">
-            <label>pride</label>
-            <br>
-            <input type="checkbox" name="emote" value="optimism" id="optimism">
-            <label>optimism</label>
-            <br>
-            <input type="checkbox" name="emote" value="savoring" id="savoring">
-            <label>savoring</label>
-            <br>
-            <input type="checkbox" name="emote" value="relaxation" id="relaxation">
-            <label>relaxation</label>
-            <br>
-            <input type="checkbox" name="emote" value="hoping" id="hoping">
-            <label>hoping</label>
-            <br>
-            <input type="checkbox" name="emote" value="caring" id="caring">
-            <label>caring</label>
-            <br>
-            <input type="checkbox" name="emote" value="eager" id="eager">
-            <label>eager</label>
-            <br>
-            <input type="checkbox" name="emote" value="calm" id="calm">
-            <label>calm</label>
-            <br>
-            <input type="checkbox" name="emote" value="chilledOut" id="chilledOut">
-            <label>chilled-out</label>
-            <br>
-            <input type="checkbox" name="emote" value="fear" id="fear">
-            <label>fear</label>
-            <br>
-            <input type="checkbox" name="emote" value="scared" id="scared">
-            <label>scared</label>
-            <br>
-            <input type="checkbox" name="emote" value="panic" id="panic">
-            <label>panic</label>
-            <br>
-            <input type="checkbox" name="emote" value="terror" id="terror">
-            <label>terror</label>
-            <br>
-            <input type="checkbox" name="emote" value="nervous" id="nervous">
-            <label>nervous</label>
-            <br>
-            <input type="checkbox" name="emote" value="worry" id="worry">
-            <label>worry</label>
-            <br>
-            <input type="checkbox" name="emote" value="dread" id="dread">
-            <label>dread</label>
-            <br>
-            <input type="checkbox" name="emote" value="tense" id="tense">
-            <label>tense</label>
-            <br>
-            <input type="checkbox" name="emote" value="anxiety" id="anxiety">
-            <label>anxiety</label>
-            <br>
-            <input type="checkbox" name="emote" value="alarm" id="alarm">
-            <label>alarm</label>
-            <br>
-            <input type="checkbox" name="emote" value="stressed" id="stressed">
-            <label>stressed</label>
-            <br>
-            <input type="checkbox" name="emote" value="horror" id="horror">
-            <label>horror</label>
-            <br>
-            <input type="checkbox" name="emote" value="anger" id="anger">
-            <label>anger</label>
-            <br>
-            <input type="checkbox" name="emote" value="mad" id="mad">
-            <label>mad</label>
-            <br>
-            <input type="checkbox" name="emote" value="pissedOff" id="pissedOff">
-            <label>pissed-off</label>
-            <br>
-            <input type="checkbox" name="emote" value="rage" id="rage">
-            <label>rage</label>
-            <br>
-            <input type="checkbox" name="emote" value="hate" id="hate">
-            <label>hate</label>
-            <br>
-            <input type="checkbox" name="emote" value="frustration" id="frustration">
-            <label>frustration</label>
-            <br>
-            <input type="checkbox" name="emote" value="shock" id="shock">
-            <label>shock</label>
-            <br>
-            <input type="checkbox" name="emote" value="lonely" id="lonely">
-            <label>lonely</label>
-            <br>
-            <input type="checkbox" name="emote" value="sad" id="sad">
-            <label>sad</label>
-            <br>
-            <input type="checkbox" name="emote" value="depression" id="depression">
-            <label>depression</label>
-            <br>
-            <input type="checkbox" name="emote" value="devastation" id="devastation">
-            <label>devastation</label>
-            <br>
-            <input type="checkbox" name="emote" value="grossedOut" id="grossedOut">
-            <label>grossed out</label>
-            <br>
-            <input type="checkbox" name="emote" value="revulsion" id="revulsion">
-            <label>revulsion</label>
-            <br>
-            <input type="checkbox" name="emote" value="nausea" id="nausea">
-            <label>nausea</label>
-            <br>
-            <input type="checkbox" name="emote" value="disgust" id="disgust">
-            <label>disgust</label>
-            <br>
-            <input type="submit" name="submit" value="done" id="done">
-        </form>
-    </div>
+    <button id="find-me">Show my location</button><br />
+    <p id="status"></p>
+    <a id="map-link" target="_blank"></a>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-database.js"></script>
-    <script src="main.js"></script>
+    <script src="helpers.js"></script>
+    <script src="layers.js"></script>
+    <script src="crystal.js"></script>
+    <script src="./fitbit.js"></script>
+    <script src="./geolocation.js"></script>
     <script src="libraries/p5.js"></script>
     <script src="libraries/p5.dom.js"></script>
     <script src="libraries/p5.sound.js"></script>
+    <script src="main.js"></script>
     
 </body>
 

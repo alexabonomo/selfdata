@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/alexabonomo/selfdata#readme",
   "dependencies": {
-    "firebase": "^7.2.1"
+    "dropbox": "^4.0.30",
+    "firebase": "^7.2.1",
+    "twilio": "^3.36.0"
   }
 }

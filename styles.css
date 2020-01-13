@@ -1,0 +1,171 @@
+body {
+    font-family: 'Questrial', sans-serif;
+}
+
+header{
+    height:100px;
+}
+
+.daily-emotion-happy {
+    padding: 0px 0 200px 0;
+    font-size: 30px;
+    width:50%;
+    padding-left: 20%;
+}
+
+.daily-emotion-relaxation {
+    padding: 200px 0 200px 0;
+    font-size: 30px;
+    width:50%;
+    padding-left: 20%;
+}
+
+
+.daily-emotion-fear {
+    padding: 200px 0 200px 0;
+    font-size: 30px;
+    width:50%;
+    padding-left: 20%;
+}
+
+.daily-emotion-anxiety {
+    font-size: 30px;
+    width:50%;
+    padding-left: 20%;
+    
+}
+
+.daily-emotion-anger {
+    padding: 200px 0 200px 0;
+    padding: 200px 0 200px 0;
+    font-size: 30px;
+    width:50%;
+    padding-left: 20%;
+}
+
+.daily-emotion-sad {
+    padding: 200px 0 200px 0;
+    font-size: 30px;
+    width:50%;
+    padding-left: 20%;
+}
+.daily-emotion-desire{
+    padding: 200px 0 200px 0;
+    font-size: 30px;
+    width:50%;
+    padding-left: 20%;
+}
+.daily-emotion-disgust {
+    padding: 200px 0 200px 0;
+    font-size: 30px;
+    width:50%;
+    padding-left: 20%;
+}
+
+#done {
+    margin: auto;
+    width: 10%;
+    margin-top: 10%;
+    margin-left: 50%;
+}
+
+fieldset {
+    border-style: none;
+}
+
+/* input.hide-checkbox {
+    display: none;
+} */
+
+.happy{
+    
+}
+
+.happy:hover {
+    text-decoration: underline;
+}
+.relaxation {
+   
+}
+.relaxation:hover {
+    text-decoration: underline;
+}
+.anxiety {
+   
+}
+.anxiety:hover {
+    text-decoration: underline;
+}
+
+.fear {
+    
+}
+.fear:hover {
+    text-decoration: underline;
+}
+.sad{
+    
+}
+.sad:hover {
+    text-decoration: underline;
+}
+.desire {
+    
+}
+.desire:hover {
+    text-decoration: underline;
+}
+.disgust {
+   
+}
+.disgust:hover {
+    text-decoration: underline;
+}
+.anger {
+    
+}
+.anger:hover {
+    text-decoration: underline;
+}
+
+
+/* scale */
+.scale {
+  direction: rtl;
+  display: inline-block;
+  padding: 20px;
+  position: relative;
+}
+
+.scale label {
+  background: transparent;
+  border: 2px solid #333;
+  border-radius: 30px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+.scale label .description {
+  bottom: 0;
+  display: none;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.scale input[type="radio"] {
+  display: none;
+}
+
+.scale label:hover,
+.scale label:hover ~ label,
+.scale input[type="radio"]:checked ~ label {
+   background: #333;
+}
+
+.scale label:hover .description {
+  display: block;
+}
