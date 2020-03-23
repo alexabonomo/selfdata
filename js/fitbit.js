@@ -53,31 +53,22 @@ var processHeartRate = function(timeSeriesHR) {
 const myHeartrate = [];
 
 var viewDataHR = function(timeSeriesHR) {
-    console.log("TimeSeries: " + timeSeriesHR);
+    //console.log(timeSeriesHR);
 
-    for(var i =  0; i < timeSeriesHR.length; i++){
-        //console.log("TimeSeriesHR loop: " + i);
-        myHeartrate.push(timeSeriesHR[i]);
+    for(let i =  0; i < timeSeriesHR.length; i++){
+        myHeartrate.push(parseInt(timeSeriesHR[i]));
 
         //console.log("My Heartrate  Local: " + myHeartrate);
     }
-
-    // var myHR = function() {
-    //     myHeartrate.push(timeSeriesHR);
-
-
-    // }
-
-    // // execute function
-    // myHR();
 }
 
 
 
 
 
+
 fetch(
-    'https://api.fitbit.com/1/user/-/activities/heart/date/2020-01-10/1d/1sec/time/00:00/23:59.json',
+    'https://api.fitbit.com/1/user/-/activities/heart/date/today/1d/1sec/time/00:00/23:59.json',
     {
         headers: new Headers({
             'Authorization': 'Bearer ' + fitbitAccessToken
@@ -93,24 +84,44 @@ fetch(
 });
 
 var processSleep = function(timeSeriesSleep)  {
+ 
     return timeSeriesSleep['sleep']
-    // .map(
-    //     function(measurement) {
-    //         return [
-    //             measurement.time.split(':').map(
-    //                 function(timeSegment) {
-    //                     return Number.parseInt(timeSegment);
-    //                 }
-    //             ),
-    //             measurement.value
-    //         ];
-    //     }
-    // );
+    .map(
+        function(measurement){
+            return [
+                measurement.levels
+                .data
+                .map(
+                    function(measurement){
+                        return [
+                            measurement.level
+                            
+                        ]
+                    }
+                )
+            ]
+        }
+    )
 }
+var mySleep = [];
+
+
 
 var viewDataSleep = function(timeSeriesSleep) {
-    console.log(timeSeriesSleep);
+
+    //console.log(timeSeriesSleep);
+
+    for(let i =  0; i < timeSeriesSleep.length; i++){
+        for(let j = 0; j < timeSeriesSleep[i].length; j++){
+            //mySleep.push(timeSeriesSleep[i][j]);
+            for(let k = 0; timeSeriesSleep[i][j].length; k++){
+                mySleep.push(timeSeriesSleep[i][j][k].toString());
+            }
+        }
+    }
 }
+
+
 
 fetch(
     'https://api.fitbit.com/1.2/user/-/sleep/date/today.json',

@@ -1,0 +1,252 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+body {
+  font-family: Baskerville, Georgia, serif;
+  font-size:100%;
+  overflow:hidden;
+}
+a {
+  display: inline-block;
+  width: 50px;
+  text-decoration: none;
+}
+
+h1 {
+    font-weight: 100;
+    font-size: 5em;
+}
+
+.nav, ul, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+#emotion-today main {
+    position: absolute;
+    top: 30ch;
+}
+ol div {
+  font-family: Baskerville, Georgia, serif;
+  font-size:2em;
+  width: 50vw;
+  padding-left: ;
+  display:block;
+}
+
+ol {
+    padding-left: 10em;
+    list-style-type: none;
+}
+
+.nav {
+  background:  rgb(42, 41, 40);
+  width: 100vw;
+  height: 60px;
+  top: 0em;
+  position: fixed;
+  z-index: 1;
+}
+
+.nav li {
+  display: inline-block;
+  list-style: none;
+  height: 60px; /* should be the same as line-height */
+  line-height: 60px; /* should be the same as height */
+  padding: 0 40px; /* "0" sets top and bottom padding to none */
+}
+
+.nav li:hover {
+  background: #777;
+  transition: background .3s;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+nav, scroll-container {
+  display: block;;
+  margin: 0 auto;
+  text-align: left;
+  align-content: center;
+}
+nav {
+  position:fixed;
+  top: 30%;
+  left: 1.5%;
+  height:auto;
+  font-size:2em;
+  width: 1%;
+  margin:auto;
+}
+
+scroll-container {
+  display: block;
+  width: 100%;
+  height: 2000px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+scroll-page {
+  color: rgb(42, 41, 40);
+  display: block;
+  width:100%;
+  height: 100vh;
+  padding-top:3em;
+  align-items: center;
+  justify-content: left;
+  font-size: 2.5em;
+}
+.main {
+    :60px;
+}
+.entry-container {
+    height:30vh;
+    display:block;
+}
+
+.entry-container div {
+    width:100%;
+    margin:auto;
+
+}
+
+.hide-checkbox{
+    display: none;
+}
+
+label:hover{
+    background-color:#F4ECDF;
+    padding: 2%;
+}
+
+label input:checked~.checkmark {
+  background-color:#F4ECDF;
+  padding: 2%;
+}
+
+fieldset {
+border: none;
+width: 12%;
+padding: 4em 0 0 10em;
+}
+#subBtnHolder {
+    position:fixed;
+    bottom: 2em;
+    right: 2.5em;
+    text-align: center;
+}
+#subBtn {
+    font-family: 'Questrial', sans-serif;
+    background-color: #F4ECDF;
+    border: none;
+    padding:1%;
+}
+
+#page1 {
+  background-color:rgb(234, 198, 121);
+}
+
+#page2 {
+  background-color:rgb(76, 109, 127);
+}
+#page3 {
+  background-color:rgb(53, 141, 109);
+}
+#page4 {
+  background-color:rgb(207, 140, 152);
+}
+#page5 {
+  background-color:rgb(244, 236, 223);
+}
+#page6 {
+  background-color:rgb(42, 78, 134);
+}
+#page7 {
+  background-color:rgb(169, 153, 191);
+}
+#page8 {
+  background-color:rgb(87, 81, 90);
+}
+#page9 {
+  background-color: rgb(53, 140, 108);
+}
+
+
+/* Make circles that indicate the steps of the form: */
+nav a {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  color: rgb(42, 41, 40);
+  display: inline-block;
+}
+
+nav a:visited {
+    color: rgb(42, 41, 40);
+}
+
+#emotion-today {
+    background-color:rgb(244, 236, 223);
+    position: absolute;
+    right: 0;
+    width: 50vw;
+    height: 100vh;
+    z-index: 0;
+}
+
+
+.thought-container {
+    position: absolute;
+    bottom: 20em;
+    display: flex;
+}
+#submitThought {
+    position: absolute;
+    left: 7.25em;
+    bottom: 1em;
+    font-size: 5em;
+    border: none;
+    color: rgb(42, 41, 40);
+}
+input {
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(42, 41, 40);
+    background: transparent;
+    padding: 10px 0px 20px 2em;
+    font-size: 2em;
+}
+
+#thought1,
+#thought2, 
+#thought3 {
+    display:block;
+}
+
+#redact1,
+#redact2,
+#redact3 {
+    display: block;
+    padding-left: 1em;
+}
+
+
+#prompt {
+    padding: 3.5em 0 0 4.5em;
+    font-size: 5em;
+}
+

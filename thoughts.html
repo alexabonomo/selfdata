@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta>
+    <meta>
+    <title>Entry</title>
+    <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles-entry.css">
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="index.html" class=nav-link>Home</a></li>
+            <li><a href="#" class=nav-link>About</a></li>
+            <li><a href="entry.html" class=nav-link>Entry</a></li>
+            <li><a href="#" class=nav-link>Journal</a></li>
+        </ul>
+    </div>
+
+    <section>
+        <div id="prompt">
+            <p>3 words to describe today . . .</p>
+        </div>
+    </section>
+    <section class="container">
+            <form id="thoughts">
+                <fieldset>
+                    <div class="thought-container">
+                        <div class="thought-box">
+                            <input type="text" id="thought1" name="thought1" autocomplete="off">
+                            <input type="checkbox" id="redact1" name="redactvalue1"  value="true">
+                        </div>
+                        <div class="thought-box">
+                            <input type="text" id="thoughtredact2" name="thought2" autocomplete="off">
+                            <input type="checkbox" id="redact1" name="redactvalue2" value="true">
+                        </div>
+                        <div class="thoughts-box">
+                            <input type="text" id="thoughtredact3" name="thought3" autocomplete="off">
+                            <input type="checkbox" id="redact1" name="redactvalue3" value="true">
+                        </div>
+                    </div>
+                    <input type="submit" id="submitThought" value="+">
+                </fieldset>
+            </form>
+    </section>
+</body>
+<script src="libraries/p5.js"></script>
+<script src="libraries/p5.dom.js"></script>
+<script src="libraries/p5.sound.js"></script>
+</html>

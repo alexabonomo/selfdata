@@ -33,10 +33,6 @@ function randomSelectTwo() {
     return rando > 1 ? true : false
 }
 
-function randomSelectThree() {
-    const rando = random(3)
-    return rando > 1 ? make
-}
 
 function getRandomFromPalette() {
     const rando = floor(random(0, PALETTE.length))

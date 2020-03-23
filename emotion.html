@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta>
+    <meta>
+    <title>Entry</title>
+    <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles-entry.css">
+</head>
+<body>
+    <nav>
+        <a href="#page1">happy</a>
+        <a href="#page2">fear</a>
+        <a href="#page3">anger</a>
+        <a href="#page4">sad</a>
+        <a href="#page5">desire</a>
+        <a href="#page6">relaxation</a>
+        <a href="#page7">anxiety</a>
+        <a href="#page8">disgust</a>
+        <!-- <a href="#page9"></a>   -->
+    </nav>
+    <scroll-container>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html" class=nav-link>Home</a></li>
+                <li><a href="#" class=nav-link>About</a></li>
+                <li><a href="entry.html" class=nav-link>Entry</a></li>
+                <li><a href="#" class=nav-link>Journal</a></li>
+            </ul>
+        </div>
+        <div id="emotion-today">
+            <main>
+                <ol class="container"></ol>
+            </main>
+        </div>
+        <form id="emotions">
+            <div id=subBtnHolder><input type="submit" name="submit" value="Submit" id="subBtn"></div>
+            <scroll-page id="page1">
+                <fieldset>
+                    <div>
+                        <label for="liking">
+                            <input class="hide-checkbox" type="checkbox" name="liking" value="true" id="liking">
+                            <span class="checkmark">liking</span>
+                        </label>
+                    </div> 
+                    <div>
+                        <label for="pleasure">
+                            <input class="hide-checkbox" type="checkbox" name="pleasure" value="true" id="pleasure">
+                            <span class="checkmark">pleasure</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="enjoyment">
+                            <input class="hide-checkbox" type="checkbox" name="enjoyment" value="true" id="enjoyment">
+                            <span class="checkmark">enjoyment</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input class="hide-checkbox" type="checkbox" name="happy" value="true" id="happy">
+                            <span class="checkmark">happy</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="enthusiasm">
+                            <input class="hide-checkbox" type="checkbox" name="enthusiasm" value="true" id="enthusiasm">
+                            <span class="checkmark">enthusiasm</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="satisfaction">
+                            <input class="hide-checkbox" type="checkbox" name="satisfaction" value="true" id="satisfaction">
+                            <span class="checkmark">satisfaction</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="contentment">
+                            <input class="hide-checkbox" type="checkbox" name="contentment" value="true" id="contentment">
+                            <span class="checkmark">contentment</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="thankful">
+                            <input class="hide-checkbox" type="checkbox" name="thankful" value="true" id="thankful">
+                            <span class="checkmark">thankful</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="excitement">
+                            <input class="hide-checkbox" type="checkbox" name="excitement" value="true" id="excitement">
+                            <span class="checkmark">excitement</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="adoration">
+                            <input class="hide-checkbox" type="checkbox" name="adoration" value="true" id="adoration">
+                            <span class="checkmark">adoration</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="affection">
+                            <input class="hide-checkbox" type="checkbox" name="affection" value="true" id="affection">
+                            <span class="checkmark">affection</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="pride">
+                            <input class="hide-checkbox" type="checkbox" name="pride" value="true" id="pride">
+                            <span class="checkmark">pride</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="optimism">
+                            <input class="hide-checkbox" type="checkbox" name="optimism" value="true" id="optimism">
+                            <span class="checkmark">optimism</span>
+                        </label>
+                    </div>
+                </fieldset>
+            </scroll-page>
+            <scroll-page id="page2">
+                <fieldset>
+                    <label for="fear">
+                        <input class="hide-checkbox feeling fear" type="checkbox" name="fear" value="true" id="fear">
+                        <span class="checkmark">fear</span>
+                    </label>
+                    <br>
+                    <label for="scared">
+                        <input class="hide-checkbox feeling fear" type="checkbox" name="scared" value="true" id="scared">
+                        <span class="checkmark">scared</span>
+                        <br>
+                    </label>
+                    <label for="panic">
+                        <input class="hide-checkbox feeling fear" type="checkbox" name="panic" value="true" id="panic">
+                        <span class="checkmark">panic</span>
+                    </label>
+                    <br>
+                    <label for="terror">
+                        <input class="hide-checkbox feeling fear" type="checkbox" name="terror" value="true" id="terror">
+                        <span class="checkmark">terror</span>
+                    </label>
+                    <br>
+                    <label for="nervous">
+                        <input class="hide-checkbox feeling fear" type="checkbox" name="nervous" value="true" id="nervous">
+                        <span class="checkmark">nervous</span>
+                    </label>
+                    <br>
+                    <label for="worry">
+                        <input class="hide-checkbox feeling fear" type="checkbox" name="worry" value="true" id="worry">
+                        <span class="checkmark">worry</span>
+                    </label>
+                    <br>
+                    <label for="dread">
+                        <input class="hide-checkbox feeling fear" type="checkbox" name="dread" value="true" id="dread">
+                        <span class="checkmark">dread</span>
+                    </label>
+                    <br>
+                    <label for="tense">
+                        <input class="hide-checkbox feeling fear" type="checkbox" name="tense" value="true" id="tense">
+                        <span class="checkmark">tense</span>
+                    </label>
+                    <br>
+                </fieldset>
+                <div id="c2"></div>
+            </scroll-page>
+            <scroll-page id="page3">
+                <fieldset>
+                    <label for="anger">
+                        <input class="hide-checkbox feeling anger" type="checkbox" name="anger" value="true" id="anger">
+                        <span class="checkmark">anger</span>
+                    </label>
+                    <br>
+                    <label for="tense">
+                        <input class="hide-checkbox feeling anger" type="checkbox" name="tense" value="true" id="tense">
+                        <span class="checkmark">tense</span>
+                    </label>
+                    <br>
+                    <label for="pissedOff">
+                        <input class="hide-checkbox feeling anger" type="checkbox" name="pissedOff" value="true" id="pissedOff">
+                        <span class="checkmark">pissed off</span>
+                    </label>
+                    <br>
+                    <label for="rage">
+                        <input class="hide-checkbox feeling anger" type="checkbox" name="rage" value="true" id="rage">
+                        <span class="checkmark">rage</span>
+                    </label>
+                    <br>
+                    <label for="hate">
+                        <input class="hide-checkbox feeling anger" type="checkbox" name="hate" value="true" id="hate">
+                        <span class="checkmark">hate</span>
+                    </label>
+                    <br>
+                    <label for="tense">
+                        <input class="hide-checkbox feeling anger" type="checkbox" name="tense" value="true" id="frustration">
+                        <span class="checkmark">tense</span>
+                    </label>
+                    <br>
+                    <label for="shock">
+                        <input class="hide-checkbox feeling anger" type="checkbox" name="shock" value="true" id="shock">
+                        <span class="checkmark">shock</span>
+                    </label>
+                    <br>
+                </fieldset>
+            </scroll-page>
+            <scroll-page id="page4">
+                <fieldset>
+                    <label for="lonely">
+                        <input class="hide-checkbox" type="checkbox" name="lonely" value="true" id="lonely">
+                        <span class="checkmark">lonely</span>
+                    </label>
+                    <br>
+                    <label for="sad">
+                        <input class="hide-checkbox" type="checkbox" name="sad" value="true" id="sad">
+                        <span class="checkmark">sad</span>
+                    </label>
+                    <br>
+                    <label for="grief">
+                        <input class="hide-checkbox" type="checkbox" name="grief" value="true" id="grief">
+                        <span class="checkmark">grief</span>
+                    </label>
+                    <br>
+                    <label for="empty">
+                        <input class="hide-checkbox" type="checkbox" name="empty" value="true" id="empty">
+                        <span class="checkmark">empty</spanclass="checkmark">
+                    </label>
+                    <br>
+                    <label for="depression">
+                        <input class="hide-checkbox" type="checkbox" name="depression" value="true" id="depression">
+                       <span class="checkmark">depression</span>
+                    </label>
+                    <br>
+                    <label for="devastation">
+                        <input class="hide-checkbox" type="checkbox" name="devastation" value="true" id="devastation">
+                        <span class="checkmark">devastation</span>
+                    </label>
+                    <br>
+                </fieldset>
+            </scroll-page>
+            <scroll-page id="page5">
+                <fieldset>
+                    <label for="longing">
+                        <input class="hide-checkbox" type="checkbox" name="emote" value="true" id="longing">
+                        <span class="checkmark">longing</span>
+                    </label>
+                    <br>
+                    <label for="wanting">
+                        <input class="hide-checkbox" type="checkbox" name="wanting" value="true" id="wanting">
+                        <span class="checkmark">wanting</span>
+                    </label>
+                    <br>
+                    <label for="craving">
+                        <input class="hide-checkbox" type="checkbox" name="craving" value="true" id="craving">
+                        <span class="checkmark">craving</span>
+                    </label>
+                    <br>
+                    <label for="desire">
+                        <input class="hide-checkbox" type="checkbox" name="desire" value="true" id="desire">
+                        <span class="checkmark">desire</span>
+                    </label>
+                    <br>
+                    <label for="need">
+                        <input class="hide-checkbox" type="checkbox" name="need" value="true" id="need">
+                        <span class="checkmark">need</span>
+                    </label>
+                    <br>
+                    <label for="anticipation">
+                        <input class="hide-checkbox" type="checkbox" name="anticipation" value="true" id="anticipation">
+                        <span class="checkmark">anticipation</span>
+                    </label>
+                    <br>
+                </fieldset>
+            </scroll-page>
+            <scroll-page id="page6">
+                <fieldset>
+                    <label for="easyGoing">
+                        <input class="hide-checkbox" type="checkbox" name="easyGoing" value="true" id="easyGoing">
+                        <span class="checkmark">easy-going</span>
+                    </label>
+                    <br>
+                    <label for="love">
+                        <input class="hide-checkbox" type="checkbox" name="love" value="true" id="love">
+                        <span class="checkmark">love</span>
+                    </label>
+                    <br>
+                    <label for="attraction">
+                        <input class="hide-checkbox" type="checkbox" name="attraction" value="true" id="attraction">
+                        <span class="checkmark"></span>attraction
+                    </label>
+                    <br>
+                    <label for="savoring">
+                        <input class="hide-checkbox" type="checkbox" name="savoring" value="true" id="savoring">
+                        <span class="checkmark">savoring</span>
+                    </label>
+                    <br>
+                    <label for="relaxation">
+                        <input class="hide-checkbox" type="checkbox" name="relaxation" value="true" id="relaxation">
+                        <span class="checkmark">relaxation</span>
+                    </label>
+                    <br>
+                    <label for="hoping">
+                        <input class="hide-checkbox" type="checkbox" name="hoping" value="true" id="hoping">
+                        <span class="checkmark">hoping</span>
+                    </label>
+                    <br>
+                    <label for="caring">
+                        <input class="hide-checkbox" type="checkbox" name="caring" value="true" id="caring">
+                        <span class="checkmark">caring</span>
+                    </label>
+                    <br>
+                    <label for="eager">
+                        <input class="hide-checkbox" type="checkbox" name="eager" value="true" id="eager">
+                        <span class="checkmark">eager</span>
+                    </label>
+                    <br>
+                    <label for="calm">
+                        <input class="hide-checkbox" type="checkbox" name="calm" value="true" id="calm">
+                        <span class="checkmark">calm</span>
+                    </label>
+                    <br>
+                    <label for="chilledOut">
+                        <input class="hide-checkbox" type="checkbox" name="chilledOut" value="true" id="chilledOut">
+                        <span class="checkmark">chilled out</span>
+                    </label>
+                    <br>
+                </fieldset>
+            </scroll-page>
+            <scroll-page id="page7">
+                <fieldset>
+                    <label for="anxiety">
+                        <input class="hide-checkbox" type="checkbox" name="anxiety" value="true" id="anxiety">
+                        <span class="checkmark">anxiety</span>
+                    </label>
+                    <br>
+                    <label for="alarm">
+                        <input class="hide-checkbox" type="checkbox" name="alarm" value="true" id="alarm">
+                        <span class="checkmark">alarm</span>
+                    </label>
+                    <br>
+                    <label for="stressed">
+                        <input class="hide-checkbox" type="checkbox" name="stressed" value="true" id="stressed">
+                        <span class="checkmark">stressed</span>
+                    </label>
+                    <br>
+                    <label for="horror">
+                        <input class="hide-checkbox" type="checkbox" name="horror" value="true" id="horror">
+                        <span class="checkmark">horror</span>
+                    </label>
+                    <br>
+                </fieldset>
+            </scroll-page>
+            <scroll-page id="page8">
+                <fieldset>
+                    <label for="grossedOut">
+                        <input class="hide-checkbox" type="checkbox" name="grossedOut" value="true" id="grossedOut">
+                        <span class="checkmark">grossed out</span>
+                    </label>
+                    <br>
+                    <label for="revulsion">
+                        <input class="hide-checkbox" type="checkbox" name="revulsion" value="true" id="revulsion">
+                        <span class="checkmark">revulsion</span>
+                    </label>
+                    <br>
+                    <label for="nausea">
+                        <input class="hide-checkbox" type="checkbox" name="nausea" value="true" id="nausea">
+                        <span  class="checkmark">nausea</span>
+                    </label>
+                    <br>
+                    <label for="sickened">
+                        <input class="hide-checkbox" type="checkbox" name="sickened" value="true" id="sickened">
+                        <span class="checkmark">sickened</span>
+                    </label>
+                    <br>
+                </fieldset>
+            </scroll-page>
+            <!-- <scroll-page id="page9">
+                <div id=subBtnHolder><input type="submit" name="submit" value="Submit" id="subBtn"></div>
+            </scroll-page> -->
+        </form>
+    </scroll-container>
+    <script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-database.js"></script>
+    <script src="libraries/p5.js"></script>
+    <script src="libraries/p5.dom.js"></script>
+    <script src="js/entry.js"></script>
+</body>
+</html>
